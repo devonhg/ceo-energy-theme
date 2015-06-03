@@ -1,10 +1,27 @@
-$primary-color: #fff;
-$secondary-color: #fff;
-$tertiary-color: #fff; 
+$primary-color: #6AB54C;
+$secondary-color: #214388;
+$tertiary-color: #428ACA; 
 
 $mobile-size: 599px; 
 $tablet-size: 799px; 
 
+@import "../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap.scss";
+
+
 @import "properties";
 
 @import "site-header";
+@import "site-content";
+
+.woocommerce-message,
+.woocommerce-error,
+.woocommerce-info{
+	border-top: 3px solid $secondary-color !important;
+}
+
+.product img,
+.cart_list img{
+	border-radius: 5px; 
+}
+
+@import "media-queries";

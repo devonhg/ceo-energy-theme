@@ -118,6 +118,26 @@ function _s_widgets_init() {
 		'after_title'   => '</h1>',
 	) );
 
+	register_sidebar( array(
+		'name'          => esc_html__( 'Upper Sidebar', '_s' ),
+		'id'            => 'upper-sidebar',
+		'description'   => 'This widget area is above the content.',
+		'before_widget' => '<aside class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+	) );
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'Lower Sidebar', '_s' ),
+		'id'            => 'lower-sidebar',
+		'description'   => 'This widget area is below the content.',
+		'before_widget' => '<aside class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+	) );
+
 }
 add_action( 'widgets_init', '_s_widgets_init' );
 

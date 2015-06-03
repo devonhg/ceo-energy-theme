@@ -1,0 +1,56 @@
+ /*==========  Non-Mobile First Method  ==========*/
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+        #masthead{
+            .site-branding{
+                display: block;
+                text-align: center; 
+                margin-bottom: 10px; 
+
+                .sidebar-branding{
+                    display: inline-block;
+                }
+            }
+
+            nav#site-navigation{
+                display: block;
+                float: none; 
+                width: auto; 
+                text-align: center; 
+            }#site-navigation .menu{
+                text-align: center; 
+            }#site-navigation .menu li{
+                width: 100%;
+                font-size: 150%;
+                padding: 5px; 
+            }#site-navigation .menu a{
+                padding: 15;
+                background-color: lighten( $secondary-color, 15% );
+            }
+        }
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+        #masthead{
+            .wrapper-line{
+                padding: 10px 0;
+            }
+        }
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+        
+    }

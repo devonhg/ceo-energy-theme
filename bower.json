@@ -1,0 +1,23 @@
+{
+  "name": "ceo-energy",
+  "version": "0.0.0",
+  "homepage": "https://github.com/devonhg/ceo-energy-theme",
+  "authors": [
+    "devonhg <devon.hugh.godfrey@gmail.com>"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass-components": "~0.1.0",
+    "bootstrap-sass-official": "~3.3.4"
+  }
+}
