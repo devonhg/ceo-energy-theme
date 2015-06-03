@@ -1,0 +1,25 @@
+.p-site-buffer, #masthead .wrapper-line {
+  max-width: 1000px;
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.p-container-padding, .p-site-buffer, #masthead .wrapper-line, #masthead #site-navigation a {
+  padding: 20px; }
+
+#masthead {
+  border-bottom: 1px solid #ccc; }
+  #masthead .site-branding {
+    display: inline-block; }
+    #masthead .site-branding p, #masthead .site-branding aside {
+      margin: 0; }
+  #masthead nav#site-navigation {
+    display: inline-block;
+    float: right;
+    width: auto; }
+  #masthead nav#site-navigation ul {
+    padding: 15px 15px; }
+
+/*# sourceMappingURL=sass.css.map */
+

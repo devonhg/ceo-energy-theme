@@ -1,0 +1,25 @@
+#masthead{
+
+	border-bottom: 1px solid #ccc;
+
+	.site-branding{
+		display: inline-block;
+		p,aside{ margin: 0; }
+	}
+	.wrapper-line{
+		@extend .p-site-buffer;
+	}
+
+	nav#site-navigation{
+		display: inline-block; 
+		float: right; 
+		width: auto; 
+
+	}nav#site-navigation ul{
+		padding: 15px 15px;
+	}
+
+	#site-navigation a{
+		@extend .p-container-padding;
+	}
+}

@@ -5,6 +5,8 @@
  * @package _s
  */
 
+include "woocommerce_edits.php";
+
 if ( ! function_exists( '_s_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -105,6 +107,17 @@ function _s_widgets_init() {
 		'before_title'  => '<h1 class="widget-title">',
 		'after_title'   => '</h1>',
 	) );
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'Header Area', '_s' ),
+		'id'            => 'header-area',
+		'description'   => 'Put your logo and custom text here.',
+		'before_widget' => '<aside class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+	) );
+
 }
 add_action( 'widgets_init', '_s_widgets_init' );
 
@@ -113,6 +126,9 @@ add_action( 'widgets_init', '_s_widgets_init' );
  */
 function _s_scripts() {
 	wp_enqueue_style( '_s-style', get_stylesheet_uri() );
+
+	wp_enqueue_style( 'pfg-style', get_template_directory_uri() . "/build/styles.min.css" );
+	wp_enqueue_script( 'pfg-scripts', get_template_directory_uri() . "/build/scripts.min.js", array(), '1.0.0', true );
 
 	wp_enqueue_script( '_s-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
