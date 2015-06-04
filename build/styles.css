@@ -5775,8 +5775,10 @@ button.close {
   #content .button {
     font-size: 150%;
     margin-bottom: 5px; }
-  #lower-sidebar .value select,
-  #content .value select {
+  #lower-sidebar select,
+  #lower-sidebar input,
+  #content select,
+  #content input {
     height: 40px; }
   #lower-sidebar p, #lower-sidebar a,
   #content p,
