@@ -5689,8 +5689,8 @@ button.close {
   #content .woocommerce-ordering,
   #content .added_to_cart {
     display: none; }
-  #content .wc-forward {
-    width: 100%; }
+  #content #shipping_method li label {
+    margin-left: 20px; }
   #content #primary .product img {
     -webkit-box-shadow: 12px 11px 16px 1px rgba(0, 0, 0, 0.32);
     -moz-box-shadow: 12px 11px 16px 1px rgba(0, 0, 0, 0.32);
@@ -5786,7 +5786,10 @@ button.close {
   #lower-sidebar p, #lower-sidebar a,
   #content p,
   #content a {
-    font-size: 120%; } }
+    font-size: 120%; }
+  #lower-sidebar .wc-forward,
+  #content .wc-forward {
+    width: 100%; } }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   #masthead .wrapper-line {
