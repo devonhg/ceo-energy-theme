@@ -5688,12 +5688,32 @@ button.close {
   #content .woocommerce-ordering,
   #content .added_to_cart {
     display: none; }
+  #content #primary .product img {
+    -webkit-box-shadow: 12px 11px 16px 1px rgba(0, 0, 0, 0.32);
+    -moz-box-shadow: 12px 11px 16px 1px rgba(0, 0, 0, 0.32);
+    box-shadow: 12px 11px 16px 1px rgba(0, 0, 0, 0.32); }
+  #content #primary .cart,
+  #content #primary .variations_button {
+    display: inline-block;
+    margin-top: 15px; }
+  #content #primary .label {
+    color: #000; }
+  #content #primary .sku_wrapper {
+    display: none; }
   #content #lower-sidebar {
     background-color: #6AB54C;
     color: #fff;
     text-align: center; }
+    #content #lower-sidebar .variation {
+      display: none; }
+    #content #lower-sidebar h1 {
+      text-decoration: underline; }
     #content #lower-sidebar .total {
-      border-top: 3px solid #fff; }
+      border-top: 0;
+      display: inline-block;
+      border: 1px solid #fff;
+      padding: 3px;
+      border-radius: 3px; }
     #content #lower-sidebar .checkout {
       background-color: #214388;
       color: #fff; }
@@ -5704,11 +5724,11 @@ button.close {
   #content .button.alt:hover {
     box-shadow: none; }
   #content .cart_list {
-    display: inline-block; }
+    display: block; }
   #content .cart_list li {
     width: 150px;
     padding: 10px;
-    float: left; }
+    display: inline-block; }
     #content .cart_list li img {
       width: 100%;
       height: auto; }
@@ -5748,11 +5768,27 @@ button.close {
     padding: 5px; }
   #masthead #site-navigation .menu a {
     padding: 15;
-    background-color: #3061c6; } }
+    background-color: #3061c6;
+    color: #fff; }
+
+  #lower-sidebar .button,
+  #content .button {
+    font-size: 150%;
+    margin-bottom: 5px; }
+  #lower-sidebar .value select,
+  #content .value select {
+    height: 40px; }
+  #lower-sidebar p, #lower-sidebar a,
+  #content p,
+  #content a {
+    font-size: 120%; } }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   #masthead .wrapper-line {
-    padding: 10px 0; } }
+    padding: 10px 0; }
+
+  #primary .products li.product {
+    width: 100%; } }
 /* Custom, iPhone Retina */
 
 /*# sourceMappingURL=sass.css.map */

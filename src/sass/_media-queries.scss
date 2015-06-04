@@ -12,6 +12,7 @@
 
     /* Small Devices, Tablets */
     @media only screen and (max-width : 768px) {
+
         #masthead{
             .site-branding{
                 display: block;
@@ -37,8 +38,27 @@
             }#site-navigation .menu a{
                 padding: 15;
                 background-color: lighten( $secondary-color, 15% );
+                color: #fff; 
             }
         }
+
+        #lower-sidebar,
+        #content{
+            .button{
+                font-size: 150%;
+                margin-bottom: 5px; 
+            }    
+
+            .value select{
+                height: 40px; 
+            }     
+
+            p,a{
+                font-size: 120%;
+            }   
+        }
+
+
     }
 
     /* Extra Small Devices, Phones */ 
@@ -48,6 +68,13 @@
                 padding: 10px 0;
             }
         }
+
+        #primary{
+            .products li.product{
+                width: 100%;
+            }
+        }
+
     }
 
     /* Custom, iPhone Retina */ 
