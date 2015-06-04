@@ -6,6 +6,10 @@
 		display: none; 
 	}
 
+	.wc-forward{
+		width: 100%;
+	}
+
 	#primary{
 		@extend .container; 	
 		@extend .p-container-padding;	
