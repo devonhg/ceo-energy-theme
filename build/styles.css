@@ -5649,7 +5649,7 @@ button.close {
 .p-container-padding, .p-site-buffer, #masthead .wrapper-line, #masthead #site-navigation a, #content #primary, #content #upper-sidebar, #content #lower-sidebar {
   padding: 20px; }
 
-.p-button-reset, #masthead .menu-toggle {
+.p-button-reset, #masthead .menu-toggle, #content .cscfForm input.btn {
   border: none;
   -webkit-appearance: none;
   outline: none;
@@ -5691,6 +5691,13 @@ button.close {
     display: none; }
   #content #shipping_method li label {
     margin-left: 20px; }
+  #content .cscfForm {
+    color: #333;
+    font-family: Arial,Helvetica,Verdana,sans-serif; }
+    #content .cscfForm input.btn {
+      background-color: #214388;
+      color: #fff;
+      font-size: 150%; }
   #content #primary .product img {
     -webkit-box-shadow: 12px 11px 16px 1px rgba(0, 0, 0, 0.32);
     -moz-box-shadow: 12px 11px 16px 1px rgba(0, 0, 0, 0.32);
